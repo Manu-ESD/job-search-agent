@@ -1,0 +1,176 @@
+.price-card {
+  background: var(--card-bg);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: var(--card-shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  border: 1px solid var(--border-color);
+}
+
+.price-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--card-shadow-hover);
+}
+
+.price-card:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+.price-card.gold {
+  border-top: 4px solid #FFD700;
+}
+
+.price-card.silver {
+  border-top: 4px solid #C0C0C0;
+}
+
+.price-card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.metal-icon {
+  font-size: 2.5rem;
+}
+
+.metal-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.metal-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.metal-symbol {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.price-main {
+  margin-bottom: 16px;
+}
+
+.current-price {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  display: block;
+}
+
+.price-unit {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.price-change {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.price-change.positive {
+  background: rgba(34, 197, 94, 0.1);
+  color: #22c55e;
+}
+
+.price-change.negative {
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+}
+
+.price-change.neutral {
+  background: rgba(107, 114, 128, 0.1);
+  color: var(--text-secondary);
+}
+
+.trend-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.trend-icon.up {
+  color: #22c55e;
+}
+
+.trend-icon.down {
+  color: #ef4444;
+}
+
+.change-value {
+  font-size: 1rem;
+}
+
+.change-percent {
+  font-size: 0.875rem;
+  opacity: 0.9;
+}
+
+.price-range {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  padding: 12px 0;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 12px;
+}
+
+.range-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.range-label {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.range-value {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.range-value.high {
+  color: #22c55e;
+}
+
+.range-value.low {
+  color: #ef4444;
+}
+
+.price-timestamp {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .price-card {
+    padding: 16px;
+  }
+
+  .current-price {
+    font-size: 1.75rem;
+  }
+
+  .metal-icon {
+    font-size: 2rem;
+  }
+}
