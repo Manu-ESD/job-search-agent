@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "goldsilverrates"
-  }
+    "default": "goldsilverrates-48194",
+    "dev-metal-price": "goldsilverrates-48194"
+  },
+  "targets": {},
+  "etags": {}
 }
